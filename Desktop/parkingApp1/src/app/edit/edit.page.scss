@@ -1,0 +1,23 @@
+.main-section{
+
+    .form{
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+
+    ion-select{
+        border: 1px solid white;
+        border: 10px;
+    }
+
+    ion-input{
+        border: 1px solid white;
+        margin: 10px;
+    }
+
+    ion-button{
+        width: 100%;
+        --border-radius:17px;
+    }
+
+}

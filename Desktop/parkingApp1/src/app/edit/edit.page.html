@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Dodaj ili izmeni</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-icon name="arrow-back-outline" class="ion-padding" routerLink="/home"></ion-icon>
+  <div class="main-section">
+    <h3 class="ion-padding">Dodaj/izmeni podatke</h3>
+    <div class="form ion-padding ion-margin">
+      <ion-select interface="action-sheet" placeholder="Izaberi dobit/trosak">
+      <ion-select-option value="dobit"> Dobit </ion-select-option>
+      <ion-select-option value="trosak"> Trosak </ion-select-option>
+    </ion-select>
+
+    <ion-input placeholder="Naslov"></ion-input>
+    <ion-input placeholder="Podnaslov"></ion-input>
+    <ion-input placeholder="Kolicina" type="number"></ion-input>
+
+    <ion-button color="dark"> Dodaj </ion-button>
+    </div>
+    
+  </div>
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-content>
+
+  <div *ngIf="note">
+    <ion-item>
+      <ion-label position="stacked"> Vreme </ion-label>
+      <ion-input [(ngModel)]="note.title"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="stacked"> Podsetnik </ion-label>
+      <ion-textarea [(ngModel)]="note.text" rows="8"></ion-textarea>
+    </ion-item>
+  </div>
+
+  <ion-button expand="block" color="success" (click)="updateNote()">
+    <ionic-icon name="save" slot="start"> </ionic-icon>
+    Izmeni
+  </ion-button>
+
+  <ion-button expand="block" color="danger" (click)="deleteNote()">
+    <ionic-icon name="trash" slot="start"> </ionic-icon>
+    Izbrisi
+  </ion-button>
+
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="tab1Pozadina">
+  <div class="preview">
+    <ion-avatar (click)="changeImage()">
+      <img *ngIf="profile?.imageUrl; else placeholder_avatar;" [src]="profile.imageUrl"/>
+      <ng-template #placeholder_avatar>
+        <div class="fallback">
+        </div>
+      </ng-template>
+    </ion-avatar>
+  </div>
+  <div class="tekst">
+    <p > DOBRODOŠLI U PLANER</p>
+     <br><br> 
+     </div>  
+     <div class="tekstBody">
+      <p> Klikom na dugme raspored otvara se plan aktivnosti. </p>
+     </div>
+</ion-content>

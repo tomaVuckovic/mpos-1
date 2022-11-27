@@ -1,0 +1,45 @@
+.ion-avatar{
+    width: 128px;
+    height: 128px;
+}
+
+.preview{
+    margin-top: 30px;
+    display:flex;
+    justify-content: center;
+}
+
+.fallback{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url("/assets/avatar.jpg");
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tekst{
+    display:flex;
+    justify-content: center;
+    margin-top: 80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+
+}
+.tekstBody{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.tab1Pozadina{
+    --background: url(/assets/pozadina2.jpg) 0 0/100% 100% no-repeat;
+}

@@ -1,0 +1,48 @@
+<ion-header>
+  
+</ion-header>
+
+<ion-content class="ion-padding">
+<form [formGroup]="credentials" (ngSubmit)="login()"> <!--Kada se klikne dugme Submit, automatski aktivira login-->
+
+  <div class="login-section ion-padding">
+    <div class="heading ion-padding">
+      <h1> Dobrodošli</h1><br>
+      <p> Prijavite se:</p>
+    </div>
+    <!-- Email -->
+    <div class="login-form ion-padding">
+
+      <ion-item fill="solid" class="ion-margin-bottom">
+        <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+        <ion-note slot="error" *ngIf="(email.dirty || email.touched) && email.errors"> Email je neispravan</ion-note>
+      </ion-item>
+      <!-- Sifra -->
+
+      <ion-item fill="solid" class="ion-margin-bottom">
+        <ion-input type="password" placeholder="Šifra" formControlName="password"> </ion-input>
+        <ion-note slot="error" *ngIf="(password.dirty || password.touched) && password.errors"> Šifra mora da sadrži
+          minimum 6 karaktera!</ion-note>
+      </ion-item>
+
+    </div>
+    <!-- Dugme login ne moze da se klikne dok se ne ispune polja-->
+
+    <div class="action-button ion-padding">
+      <ion-button expand="full" type="submit" [disabled]="!credentials.valid" class="login-button" shape="round"
+        fill="outline" color="dark"> Prijavi se </ion-button>
+    </div>
+    
+
+    <p> Nemate nalog? </p>
+    <!-- Dugme registracija -->
+
+    <div class="register ion-padding">
+      <ion-button expand="full" type="button" (click)="register()" class="register-button" shape="round"
+        fill="outline" color="dark"> Registruj se </ion-button>
+    </div>
+
+  </div>
+
+</form>
+</ion-content>
